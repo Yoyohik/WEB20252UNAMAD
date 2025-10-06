@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>Home</ul>
+        <ul>Organización</ul>
+        <ul>Equipo de Trabajo</ul>
+    </nav>
+
+    <header>
+        <h1>Portal de la Escuela Profesional de Ingeniería de Sistemas</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>REGISTRO DE ALUMNOS</h2>
+            <form action="">
+                <label for="nombre">Nombre: </label>
+                <input 
+                    type="text" 
+                    name="nombre" 
+                    placeholder="Ej: Xiao"
+                    pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                    title="No se permiten números ni caracteres especiales"
+                    required
+                >
+                <br>
+                <label for ="ap-paterno">A. paterno: </label>
+                <input 
+                    type="text" 
+                    name="ap-paterno" 
+                    placeholder="Ej: Gomez"
+                    pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                    title="No se permiten números ni caracteres especiales"
+                    required
+                >
+                <br>
+                <label for="ap-materno">A. Materno: </label>
+                <input 
+                    type="text" 
+                    name="ap-materno"
+                    placeholder="Ej: Perez"
+                    pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                    title="No se permiten números ni caracteres especiales"
+                    required
+                >
+                <br>
+                <label for="edad">Edad: </label>
+                <input 
+                    type="number"
+                    name="edad"
+                    placeholder="Ej: 20"
+                    required
+                >
+                <br>
+                <label for="email">Correo: </label>
+                <input 
+                    type="email"
+                    name="email"
+                    placeholder="ej: xxx@unamad.edu.pe"
+                    required
+                >
+                <br>
+                <label>
+                    <input type="radio" name="genero" value="M">
+                    Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="F">
+                    Femenino
+                </label>
+
+                <br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+
+        <div>
+            <h2>Tablas- LISTA DE PRODUCTOS</h2>
+            <table border="1" cellspacing="0" cellpadding="6">
+                <thead>
+                    <tr> <!--th*4 para que me cree automaticmante 4, igual para td-->
+                        <th>N</th>
+                        <th>Producto</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td align="right" colspan="3">Total</td> <!--colspan="3" para que ocupe 3 columnas-->
+                        <td>s/. 5,300.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td align="center">1</td>
+                        <td>Televisor de 42 pulgadas</td>
+                        <td>Televisor Smart Tv</td>
+                        <td>s/. 1,500.00</td>
+                    </tr>
+
+                    <tr>
+                        <td align="center">2</td>
+                        <td>Lavadora de 42 kg</td>
+                        <td>Lavadora Smart marca Samsung</td>
+                        <td>s/. 3,500.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <td>Cafetera</td>
+                        <td>Cafetera de marca Oster</td>
+                        <td>s/. 1,000.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td>Microondas</td>
+                        <td>Microondas de marca Oster</td>
+                        <td>s/. 4,000.00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+
+        <div>
+            <h2>HORARIO</h2>
+            <table border="1" cellspacing="0" cellpadding="6">
+                <thead>
+                    <tr> <!--th*4 para que me cree automaticmante 4, igual para td-->
+                        <th bgcolor="#020005" style="color: white;">Hora</th>
+                        <th bgcolor="#0F0047" style="color: white;">Lunes</th>
+                        <th bgcolor="#0F0047" style="color: white;">Martes</th>
+                        <th bgcolor="#0F0047" style="color: white;">Miercoles</th>  
+                        <th bgcolor="#0F0047" style="color: white;">Jueves</th>
+                        <th bgcolor="#0F0047" style="color: white;">Viernes</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <!-- Primera franja horaria: 2:00-2:59 -->
+                    <tr>
+                        <td bgcolor="#B6BBF1">2:00 - 2:59 pm</td>
+                        <td rowspan="3" bgcolor="#F1F2C2">Desarrollo de Aplicaciones Web</td>
+                        <td>LIBRE</td>
+                        <td rowspan="3" bgcolor="#CDA8E3">Ingeniería de software</td>
+                        <td>LIBRE</td>
+                        <td rowspan="3">LIBRE</td>
+                    </tr>
+                    
+                    <!-- Segunda franja horaria: 3:00-3:59 -->
+                    <tr>
+                        <td bgcolor="#2F0273" style="color: white;">3:00 - 3:59 pm</td>
+                        <td rowspan="2" bgcolor="#CDA8E3">Ingeniería de Software</td>
+                        <td rowspan="2" bgcolor="#F1F2C2">Desarrollo de Aplicaciones Web</td>
+                        
+                    </tr>
+                    
+                    <!-- Tercera franja horaria: 4:00-4:59 -->
+                    <tr>
+                        <td bgcolor="#B6BBF1">4:00 - 4:59 pm</td>
+                        
+                    </tr>
+                    
+                    <!-- Cuarta franja horaria: 5:00-5:59 -->
+                    <tr>
+                        <td bgcolor="#2F0273" style="color: white;">5:00 - 5:59 pm</td>
+                        <td rowspan="2" bgcolor="#CCF2C2">Arquitectura del Computador</td>
+                        <td rowspan="2">LIBRE</td>
+                        <td rowspan="4">LIBRE</td>
+                        <td rowspan="2" bgcolor="#C2EFF2">Gestión Financiera y de Procesos de Negocio</td>
+                        <td rowspan="2" bgcolor="#F2C7C2">Fundamentos de Redes</td>
+                    </tr>
+                    
+                    <!-- Quinta franja horaria: 6:00-6:59 -->
+                    <tr>
+                        <td bgcolor="#B6BBF1">6:00 - 6:59 pm</td>
+                        
+                    </tr>
+                    
+                    <!-- Sexta franja horaria: 7:00-7:59 -->
+                    <tr>
+                        <td bgcolor="#2F0273" style="color: white;">7:00 - 7:59 pm</td>
+                        <td rowspan="2" bgcolor="#F2C7C2">Fundamentos de Redes</td>
+                        <td rowspan="2" bgcolor="#C2EFF2">Gestión financiera y de Procesos de Negocio</td>
+                        <td rowspan="2">LIBRE</td>
+                        <td rowspan="2" bgcolor="#CCF2C2">Arquitectura del Computador</td>
+                    </tr>
+                    
+                    <!-- Séptima franja horaria: 8:00-8:59 -->
+                    <tr>
+                        <td bgcolor="#B6BBF1">8:00 - 8:59 pm</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
