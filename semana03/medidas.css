@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.general {
+    width: 800px;
+    height: 400px;
+    font-size: 1em;
+    background-color: aquamarine;
+}
+
+.caja_px {
+    width: 250px;
+    height: 100px;
+    background-color: hsl(108, 68%, 50%);
+}
+
+.caja_vm {
+    width: 30vmax;
+    height: 10vmin;
+    background-color: hsla(10, 68%, 50%, 0.605);
+}
+
+.caja_em {
+    width: 200em;
+    height: 200em;
+    background-color: linear-gradient(150deg, rgb(245, 248, 74));
+}
+
+/* .caja_rem {
+    background-color: green;
+} */
+
+.por {
+    width: 50%;
+    background-color: black;
+}

@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center; 
+}
+
+th, td {
+  border: 1px solid #f10e0e;
+  padding: 8px;
+}
+
+/* Cabecera centrada */
+thead th {
+  text-align: center;
+}
+
+td.t-left{
+  text-align: left;
+}
