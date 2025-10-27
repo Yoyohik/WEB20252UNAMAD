@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-inicio {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.flex-inicio div {
+    background-color: lightblue;
+}
+.flex-inicio div:first-child{ 
+    background-color: lightcoral;
+}
+.flex-inicio div:last-child{ 
+    background-color: lightcoral;
+}
+
+
+.flex-final {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.flex-final div {
+    background-color: lightblue;
+}
+
+.flex-final div:first-child{ 
+    background-color: lightcoral;
+}
+
+.flex-final div:last-child{ 
+    background-color: lightcoral;
+}
+
+
+
+.flex-central {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.flex-central div {
+    background-color: lime;
+}
+
+.flex-between {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flex-between div {
+    background-color: rgb(47, 0, 255);
+}
+.flex-between div:first-child{ 
+    background-color: lightcoral;
+}
+
+.flex-between div:last-child{ 
+    background-color: lightcoral;
+}
+
+
+
+
+.flex-around {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.flex-around div {
+    background-color: rgb(47, 0, 255);
+}
+.flex-around div:first-child{ 
+    background-color: lightcoral;
+}
+
+.flex-around div:last-child{ 
+    background-color: lightcoral;
+}
+
+
+
+.flex-evenly {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.flex-evenly div {
+    background-color: rgb(47, 0, 255);
+}
+.flex-evenly div:first-child{ 
+    background-color: lightcoral;
+}
+
+.flex-evenly div:last-child{ 
+    background-color: lightcoral;
+}
