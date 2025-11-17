@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./01-framework.css">
+    <title>FRAMEWORK</title>
+</head>
+<body>
+    <main class="container">
+        <h2>Columnas</h2>
+        <!-- Grilla -->
+        <div class="row">
+            <!-- Columnas -->
+            <div class="col oscuro">1RA COLUMNA</div>
+            <div class="col claro">2DA COLUMNA</div>
+            <div class="col oscuro">3RA COLUMNA</div>
+            <div class="col claro">4TA COLUMNA</div>
+        </div>
+        <hr>
+        <h2>COLUMNAS DEFINIDAS</h2>
+        <div class="row">
+            <div class="col-5 claro">Columna de 5</div>
+            <div class="col-7 oscuro">Columna de 7</div>
+        </div>
+        <h2>COLUMNAS REPSONSIVAS</h2>
+        <!-- breakpoint -->
+        <h3><code>col-xl-#</code></h3>
+        <h5>xl-> Las columnas colapsan si el ancho disponible es menor a 1200px.</h5>
+        <div class="row">
+            <div class="col-xl-8 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic deleniti placeat vero possimus culpa ratione laborum, voluptas dignissimos quisquam rerum, ad, expedita est voluptates officiis modi! Praesentium, minima dolorum?
+            </div>
+            <div class="col-xl-4 claro">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere pariatur delectus accusamus deleniti id! Ea consequuntur delectus aspernatur non dolorem sapiente sequi, deserunt laboriosam illo quis illum incidunt. Inventore, quasi?
+            </div>
+        </div>
+        <h3><code>col-lg-#</code></h3>
+        <h5>lg-> Las columnas colapsan si el ancho disponible es menor a 992px.</h5>
+        <div class="row">
+            <div class="col-lg-4 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at voluptatem sapiente? Ducimus minima pariatur quis autem voluptatibus tempore sunt numquam saepe repudiandae, asperiores quidem laboriosam eaque cum cumque odit.
+            </div>
+            <div class="col-lg-4 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nihil doloremque cum dolorum alias numquam minus optio explicabo quibusdam fugit, ipsum pariatur dolores totam ea, mollitia magnam ducimus? Facere, quos!
+            </div>
+            <div class="col-lg-4 oscuro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorum illo atque! Dignissimos maxime vel optio officia id veritatis repellendus sunt. Alias ad vel quam maiores nostrum doloremque impedit quisquam.
+            </div>
+        </div>
+        <hr>
+        <h3><code>col-md-#</code></h3>
+        <h5>md -> Las columnas colapsan si el ancho disponible es menor a 768px.</h5>
+        <div class="row">
+            <div class="col-md-6 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit id dolores porro rem praesentium neque, nostrum tempora.
+            </div>
+            <div class="col-md-6 claro">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nostrum repellendus sit ducimus earum minima inventore vel placeat deleniti non.
+            </div>
+        </div>
+        <hr>
+        <h3><code>col-sm-#</code></h3>
+        <h5>sm -> Las columnas colapsan si el ancho disponiblees menor a 576px.</h5>
+        <div class="row">
+            <div class="col-sm-3 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At libero perferendis aut officia reiciendis eum ipsa exercitationem quibusdam distinctio rem veritatis expedita aliquid alias, dolor, consequuntur dignissimos ex. Ratione, libero!
+            </div>
+            <div class="col-sm-9 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa non, eius delectus eveniet inventore saepe iure temporibus expedita, cupiditate laboriosam! Totam tenetur quasi quis deserunt praesentium labore maiores at!
+            </div>
+        </div>
+        <hr>
+
+        <h3><code>Columnas responsivas combinadas</code></h3>
+        <h5>Combinando las clases previamente vistas, podemos indicar que "col" ocupe distintas cantidades de columnas en diferentes medidas (breakpoint)</h5>
+        <div class="row">
+            <div class="col-xl-7 col-lg-12 oscuro">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ad veritatis, sint molestias eaque 
+            </div>
+            <div class="col-xl-3 col-lg-8 col-md-6 col-sm-12 claro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, modi nisi, quisquam dolores expedita perspiciatis quis nemo nesciunt,
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 oscuro">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nam impedit tempore voluptas, officia saepe, 
+        </div>
+        
+        <hr>
+
+        <h3><code>Botones con bootstrap</code></h3>
+
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+    </main>
+</body>
+</html>

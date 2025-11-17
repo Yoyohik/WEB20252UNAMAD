@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(62, 68, 74);
+}
+
+.header {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.parrafo{
+    font-size: 25px;
+    color: gray;
+}
+
+div {
+    color: brown;
+    height: 300px;
+    width: 200px;
+    background: cornsilk;
+    border-top-left-radius: 53px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 3px blanchedalmond;
+}
+
+div {
+    box-shadow: 0 0 30px 30px black;
+}
+
+div{
+    box-shadow: inset 0 0 10px 5px black;
+}
+
+div {
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+/* @media (min-width: 700px) {
+   
+
+} */
+
+
+@media (max-width: 600px) {
+    .header {
+        background: wheat;
+        color: black;
+    }
+
+    body{
+        background: rgb(210, 210, 233);
+    }
+
+    .parrafo{
+        font-size: 20px;
+        color: blue;
+    }
+}

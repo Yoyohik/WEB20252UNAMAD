@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.titulo{
+    animation-duration: 3s;
+    animation-name: animacionTitulo;
+    padding: 10px;
+    font-size: 8px;
+}
+
+@keyframes animacionTitulo{
+    from{
+        color: white;
+        background: darkcyan;
+    }
+    to{
+        color: blue;
+        background: gold;
+        font-size: 14px;
+    }
+} 
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background: goldenrod;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    line-height: 100px;
+    transition: all 2s ease; 
+}
+
+.translate {
+    &:hover {
+        transform: translate(100px, 100px);
+    }
+}
+
+.translatex {
+    &:hover {
+        transform: translatex(300px);
+    }
+}
+
+.translatey {
+    &:hover {
+        transform: translatey(200px);
+    }
+}
+/* Transformaciones de Escala (Scale) */
+.scale {
+    &:hover {
+        transform: scale(2, 2);
+    }
+}
+
+.scalex {
+    &:hover {
+        transform: scalex(2);
+    }
+}
+
+.scaley {
+    &:hover {
+        transform: scaley(3);
+    }
+}
+
+/* Transformaciones de Rotación (Rotate) */
+.rotate {
+    &:hover {
+        transform: rotate(2turn); /* o 720deg */
+    }
+}
+
+.rotatex {
+    &:hover {
+        transform: rotatex(1turn); /* o 360deg */
+    }
+}
+
+.rotatey {
+    &:hover {
+        transform: rotatey(2turn); /* o 720deg */
+    }
+}
+
+.rotatez {
+    &:hover {
+        transform: rotatez(1turn); /* o 360deg */
+    }
+}
+
+/* Transformaciones de Inclinación (Skew) */
+.skew {
+    &:hover {
+        transform: skew(10deg, 10deg);
+    }
+}
+
+.skewx {
+    &:hover {
+        transform: skewx(30deg);
+    }
+}
+
+.skewy {
+    &:hover {
+        transform: skewy(30deg);
+    }
+}

@@ -1,0 +1,130 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+  
+.contenedor {
+    padding: 10px;
+    margin: 10px;
+}
+.caja1 {
+    width: 200px;
+    height: 300px;
+    background: green;
+    border-bottom-left-radius: 53px;
+    box-shadow: 5px 3px blanchedalmond;
+}
+
+.caja2 {
+    width: 200px;
+    height: 300px;
+    background: green;
+    border-bottom-left-radius: 53px;
+    box-shadow: inset 0 0 30px black;
+}
+
+.caja3 {
+    width: 200px;
+    height: 300px;
+    background: green;
+    border-bottom-left-radius: 53px;
+    box-shadow: inset 0 0 30px 30px black;
+}
+
+.caja4 {
+    width: 200px;
+    height: 300px;
+    background: green;
+    border-bottom-left-radius: 53px;
+    box-shadow: 10px 10px 10px 10px,
+    -10px -10px blanchedalmond;
+}
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* 
+.titulo1{
+    text-align: center;
+    text-shadow: 10px 10px blanchedalmond;
+}
+
+.titulo2{
+    text-align: center;
+    text-shadow: 10px 10px 10px red;
+}
+
+.titulo3{
+    text-align: center;
+    text-shadow: 10px 10px 10px red, 0px 10px;
+}
+
+.titulo4{
+    text-align: center;
+    text-shadow: 10px 10px 10px red, 0px 10px blue;
+}
+
+.titulo5{
+    text-align: center;
+    text-shadow: 10px 10px 10px red, 0px 10px blue,-168px0px;
+} */ 
+
+ /* <!--  TAREA: HACER UN TREBOL     --> */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e7ece4;
+}
+
+.contenedor {
+  position: relative;
+  width: 280px;
+  height: 280px;
+}
+
+.contenedor div {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #034615;
+  border-radius: 110px 110px 7px 110px;
+  transform-origin: center;
+}
+
+.caja1 {
+  top: 1px;
+  left: 50%;
+  transform: translateX(-52%) rotate(49deg);
+  box-shadow: -6px 6px 12px rgba(127, 220, 170, 0.84);
+}
+
+.caja2 {
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%) rotate(135deg);
+  box-shadow: -6px 6px 12px rgba(127, 220, 170, 0.84);
+}
+
+.caja3 {
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%) rotate(218deg);
+  box-shadow: -6px 6px 12px rgba(127, 220, 170, 0.84);
+}
+
+.caja4 {
+  top: 50%;
+  left: 1px;
+  transform: translateY(-52%) rotate(309deg);
+  box-shadow: -6px 6px 12px rgba(127, 220, 170, 0.84);
+}
